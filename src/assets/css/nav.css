@@ -11,8 +11,8 @@ ul {
 }
 li {
     color: #fff;
-    text-decoration: none;
     display:inline;
+    /*border-right: 1px solid #fff;*/
     background-image: url(../../assets/images/icons/diamond.svg);
     background-position:right center;
     background-repeat: no-repeat;
@@ -27,6 +27,7 @@ li {
 }
 
 li:last-child {
+    /*border-right: none;*/
     background: none;
 }
 @media (max-width: 444px) {
