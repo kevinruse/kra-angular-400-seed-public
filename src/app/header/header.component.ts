@@ -2,10 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-header',
-    template: `<header>
-                       <img src="assets/images/icons/seed-icon.png" alt="">
-                       <h1>Welcome to Angular Seed!</h1>
-                  </header>`
+    templateUrl: './header.component.html'
 })
 
 export class HeaderComponent implements OnInit {
