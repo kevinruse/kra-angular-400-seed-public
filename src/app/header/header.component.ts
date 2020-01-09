@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TitleService } from '../services/title.service';
 
 @Component({
@@ -8,6 +8,9 @@ import { TitleService } from '../services/title.service';
     })
 
 export class HeaderComponent implements OnInit {
+
+    @Input()
+    user;
 
     userName: string = 'Kevin';
     title: string;
