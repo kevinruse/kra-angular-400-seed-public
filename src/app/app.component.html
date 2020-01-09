@@ -1,5 +1,11 @@
 <div>
     <app-header [user]="user"></app-header>
+    <section *ngIf="!user.registered">
+        <img src="../assets/images/plateImages/chooseMyPlate.gov.png">
+    </section>
+    <section *ngIf="user.registered">
+        <img src="../assets/images/bgImages/generic-plate.png">
+    </section>
     <button (click)="addFruit()">Add a serving of fruit</button>
     <h2>Fruit Counter: <span #fruit></span></h2>
     <p>Logged In: {{ loggedIn }}</p>
