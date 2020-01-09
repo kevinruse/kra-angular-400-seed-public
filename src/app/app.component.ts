@@ -17,7 +17,7 @@ import { ChildComponent } from './child/child.component';
 })
 export class AppComponent implements AfterViewInit {
 
-    loggedIn: boolean;
+    loggedIn: boolean = false;
 
     @ViewChild(ChildComponent, {static: false}) childView: ChildComponent;
     @ViewChild('fruit', {static: false}) fruit: ElementRef;

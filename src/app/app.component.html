@@ -8,7 +8,10 @@
     </section>
     <button (click)="addFruit()">Add a serving of fruit</button>
     <h2>Fruit Counter: <span #fruit></span></h2>
-    <p>Logged In: {{ loggedIn }}</p>
+    <p [ngSwitch]="loggedIn">Logged In:
+        <span *ngSwitchCase="false" class="notRegistered">{{ loggedIn }}</span>
+        <span *ngSwitchCase="true">{{ loggedIn }}</span>
+    </p>
     <app-child (login)="logIn($event)"></app-child>
      <!--<app-form-input icon="envelope">
          <small>Business email</small>
