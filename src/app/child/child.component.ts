@@ -8,6 +8,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class ChildComponent implements OnInit {
 
   fruitStatus: number = 0;
+  todaysPlate = new Date();
 
   @Output()
   login = new EventEmitter<boolean>();
